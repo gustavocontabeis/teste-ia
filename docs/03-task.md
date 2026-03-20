@@ -4,7 +4,7 @@
 
 ### 1. Configuração do Projeto
 - [ ] Criar estrutura de diretórios (`src/main/java/com/calculadora/`)
-- [ ] Configurar o arquivo de build (`build.xml` ou `pom.xml` se usar Maven)
+- [ ] Criar arquivo `pom.xml` com Maven, configurando o `maven-jar-plugin` para gerar um JAR executável
 - [ ] Verificar versão do JDK instalada (mínimo Java 11)
 
 ### 2. Implementação da Lógica (`CalculadoraLogica.java`)
@@ -49,10 +49,14 @@
 - [ ] Verificar que zeros à esquerda não aparecem no display
 - [ ] Verificar centralização e dimensões da janela (600×800)
 
-### 7. Empacotamento
-- [ ] Gerar arquivo `.jar` executável
-- [ ] Testar execução do `.jar` em ambiente limpo
-- [ ] Documentar instruções de execução no `README.md`
+### 7. Empacotamento e Documentação
+- [ ] Gerar arquivo JAR executável com `mvn clean package`
+- [ ] Testar execução do JAR com `java -jar target/calculadora-1.0.jar` em ambiente limpo
+- [ ] Criar arquivo `README.md` na raiz do projeto com:
+  - Descrição do projeto
+  - Pré-requisitos (JDK 11+, Maven)
+  - Instruções para empacotar (`mvn clean package`)
+  - Instruções para executar (`java -jar target/calculadora-1.0.jar`)
 
 ## Prioridade
 

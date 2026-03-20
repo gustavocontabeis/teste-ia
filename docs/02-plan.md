@@ -4,6 +4,7 @@
 
 - **Linguagem:** Java (versão 11 ou superior)
 - **Framework de UI:** Java Swing
+- **Build:** Maven (gera arquivo JAR executável)
 
 ## Dimensões da Janela
 
@@ -16,6 +17,8 @@
 ## Estrutura de Pacotes
 
 ```
+pom.xml
+README.md
 src/
 └── main/
     └── java/
@@ -54,12 +57,17 @@ src/
 - Cor de fundo dos botões de operação: laranja claro (`#FFA500`).
 - Cor de fundo do botão **Limpar**: vermelho claro (`#FF6347`).
 
+## Build com Maven
+
+O `pom.xml` deve configurar o plugin `maven-jar-plugin` (ou `maven-assembly-plugin`) para empacotar a aplicação como um JAR executável com o `Main-Class` apontando para `com.calculadora.Main`.
+
 ## Execução
 
 ```bash
-# Compilar
-javac -d out src/main/java/com/calculadora/*.java
+# Empacotar (gera o JAR em target/)
+mvn clean package
 
 # Executar
-java -cp out com.calculadora.Main
+java -jar target/calculadora-1.0.jar
 ```
+
