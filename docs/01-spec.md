@@ -50,3 +50,7 @@ Aplicação de calculadora desktop com as operações aritméticas básicas.
 - Divisão por zero deve exibir a mensagem `"Erro: divisão por zero"` (caso a divisão seja implementada futuramente).
 - O display não deve permitir que zeros à esquerda sejam acumulados (ex.: `007` deve ser exibido como `7`).
 - Números decimais podem ser suportados na versão futura.
+
+## Documentação
+
+- Deve existir um arquivo `README.md` na raiz do projeto com instruções claras de como executar o projeto, incluindo pré-requisitos, como compilar/empacotar com Maven e como rodar o arquivo JAR gerado.
